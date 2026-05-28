@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj": {}
+    "C:\\Users\\Andrey\\Desktop\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj": {
+    "C:\\Users\\Andrey\\Desktop\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Andrey\\Desktop\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj",
         "projectName": "CatalogoApi",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj",
+        "projectPath": "C:\\Users\\Andrey\\Desktop\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj",
         "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\obj\\",
+        "outputPath": "C:\\Users\\Andrey\\Desktop\\zdz-catalogo\\backend\\CatalogoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
