@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using CatalogoApi.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+
+//Configuração do entity framework com SQL Server
+builder.Services.AddDbContext<ContextoBancoDados>(opcoes =>
+    opcoes.UseSqlServer(
+        builder.Configuration.GetConnectionString("ConexaoPadrao")
+    )
+);
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
