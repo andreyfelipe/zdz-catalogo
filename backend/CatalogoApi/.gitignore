@@ -1,0 +1,38 @@
+# Visual Studio
+.vs/
+.vscode/
+*.sln.user
+*.user
+
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.nuget.props
+*.nuget.targets
+
+# NuGet
+.nupkg
+packages/
+*.lock.json
+
+# User-specific files
+*.userprefs
+*.DotSettings.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Test results
+TestResults/
+coverage/
