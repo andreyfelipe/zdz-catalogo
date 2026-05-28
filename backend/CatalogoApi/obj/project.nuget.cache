@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mLFafUkGlzo=",
+  "dgSpecHash": "GPrjJic7vgY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\catalogoapi\\CatalogoApi.csproj",
+  "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\zdz-catalogo\\backend\\CatalogoApi\\CatalogoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrey\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

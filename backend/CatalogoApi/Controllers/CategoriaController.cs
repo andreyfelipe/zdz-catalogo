@@ -44,6 +44,9 @@ namespace CatalogoApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Categoria>> Criar(CriarCategoriaDto categoriaDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var categoria = new Categoria
             {
                 Nome = categoriaDto.Nome,
@@ -60,6 +63,9 @@ namespace CatalogoApi.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Atualizar(int id, AtualizarCategoriaDto categoriaDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var categoria = await _contexto.Categorias.FindAsync(id);
             if (categoria == null)
                 return NotFound();
@@ -74,9 +80,14 @@ namespace CatalogoApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Deletar(int id)
         {
-            var categoria = await _contexto.Categorias.FindAsync(id);
+            var categoria = await _contexto.Categorias.Include(c => c.Produtos).FirstOrDefaultAsync(c => c.Id == id);
             if (categoria == null)
                 return NotFound();
+
+            // Verificar se a categoria possui produtos vinculados
+            if (categoria.Produtos.Any())
+                return Conflict(new { mensagem = "Não é possível excluir uma categoria que possua produtos vinculados." });
+
             _contexto.Categorias.Remove(categoria);
             await _contexto.SaveChangesAsync();
             return NoContent();
