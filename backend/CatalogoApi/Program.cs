@@ -8,15 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
-
 //Configuração do entity framework com SQL Server
 builder.Services.AddDbContext<ContextoBancoDados>(opcoes =>
     opcoes.UseSqlServer(
         builder.Configuration.GetConnectionString("ConexaoPadrao")
     )
 );
+
+var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
