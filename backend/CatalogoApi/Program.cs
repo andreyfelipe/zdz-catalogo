@@ -21,11 +21,13 @@ builder.Services.AddDbContext<ContextoBancoDados>(opcoes =>
 // Configuração do CORS para permitir requisições de qualquer origem
 builder.Services.AddCors(opcoes =>
     opcoes.AddPolicy("PoliticaFrontend", politica =>
-        politica.WithOrigins("http://localhost:3000")
+        politica.WithOrigins("http://localhost:3000", "http://localhost:3001")
                 .AllowAnyHeader().AllowAnyMethod()));
 
 // Configuração do MVC para permitir o uso de controllers
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(opcoes =>
+    opcoes.JsonSerializerOptions.ReferenceHandler =
+        System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

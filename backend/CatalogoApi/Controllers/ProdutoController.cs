@@ -21,7 +21,10 @@ namespace CatalogoApi.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Produto>>> ObterTodos()
         {
-            var produtos = await _contexto.Produtos.Include(p => p.Categoria).ToListAsync();
+            var produtos = await _contexto.Produtos
+                .Include(p => p.Categoria)
+                .AsNoTracking()
+                .ToListAsync();
             return Ok(produtos);
         }
 
@@ -29,7 +32,10 @@ namespace CatalogoApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> ObterPorId(int id)
         {
-            var produto = await _contexto.Produtos.Include(p => p.Categoria).FirstOrDefaultAsync(p => p.Id == id);
+            var produto = await _contexto.Produtos
+                .Include(p => p.Categoria)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(p => p.Id == id);
             if (produto == null)
                 return NotFound();
             return Ok(produto);
