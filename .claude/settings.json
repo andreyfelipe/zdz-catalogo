@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet test *)",
+      "PowerShell(Stop-Process -Id 29480 -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Process -Name \"CatalogoApi\" -ErrorAction SilentlyContinue)"
+    ]
+  }
+}
