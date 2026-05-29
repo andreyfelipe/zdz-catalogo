@@ -1,5 +1,15 @@
 # ZDZ Catálogo — Gestão de Produtos e Categorias
 
+Prototipo das telas:
+
+<img width="772" height="675" alt="image" src="https://github.com/user-attachments/assets/2a1cae55-d697-401c-a6ef-1c39f7e66add" />
+
+<img width="763" height="683" alt="image" src="https://github.com/user-attachments/assets/2e07b356-ec9a-4f2a-b056-34b03d88ea00" />
+
+<img width="778" height="560" alt="image" src="https://github.com/user-attachments/assets/e8586ef2-66d1-4a48-bc61-79cd5599b310" />
+
+<img width="760" height="553" alt="image" src="https://github.com/user-attachments/assets/7299dbd9-bf71-4d14-a18e-72f5897df6f6" />
+
 ## Pré-requisitos
 
 | Ferramenta | Versão mínima |
