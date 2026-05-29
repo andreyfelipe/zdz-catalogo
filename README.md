@@ -281,7 +281,24 @@ HTTP 409 Conflict
 > O backend **não** precisa estar rodando. O `WebApplicationFactory` sobe a API internamente usando SQLite.
 
 ```bash
+
+
 # Parar o backend (se estiver rodando) antes de executar
 cd backend/CatalogoApi.Tests
 dotnet test --verbosity normal
+
+
+
 ```
+
+
+
+
+
+Swagger :
+<img width="1816" height="967" alt="image" src="https://github.com/user-attachments/assets/0d1aff28-8bdf-4dd2-be61-db3ee494ff26" />
+
+Front: <img width="1902" height="1020" alt="image" src="https://github.com/user-attachments/assets/ab74280a-3826-4724-9eb4-13e6296c1779" />
+
+Banco de dados: <img width="786" height="681" alt="image" src="https://github.com/user-attachments/assets/b0d6e019-9928-4d92-bcb2-769aba4dc0ca" />
+
